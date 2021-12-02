@@ -1,0 +1,20 @@
+.create-design {
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(medium-tablet-max) {
+      flex-direction: row;
+    }
+    .list-tips {
+      width: 100%;
+      @include breakpoint(medium-tablet-max) {
+        width: 50%;
+      }
+    }
+  }
+  &__cover {
+    @extend .list-tips;
+    display: flex;
+    align-items: center;
+  }
+}

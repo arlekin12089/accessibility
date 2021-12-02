@@ -1,0 +1,11 @@
+.text {
+  @include font-size(18);
+  line-height: 30px;
+  color: $color-light-black;
+  font-family: $font-primary;
+  margin-bottom: 1.5em;
+  @include breakpoint(medium-tablet-max) {
+    @include font-size(24);
+    line-height: 38px;
+  }
+}

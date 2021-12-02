@@ -1,0 +1,77 @@
+.code-tips__animation {
+  display: inline-block;
+  margin-top: 1em;
+
+  .middle,
+  .end,
+  .alternate {
+    @include font-size(44);
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .end {
+    color: $color-pink;
+  }
+
+  .middle,
+  .alternate {
+    color: $color-black;
+  }
+
+  .middle {
+    animation: letters-animation 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+  }
+
+  .alternate {
+    animation: letters-animation 5s infinite;
+    animation-delay: -5s;
+    max-width: 0;
+  }
+}
+
+@keyframes letters-animation {
+  0% {
+    max-width: 500px;
+  }
+
+  25% {
+    max-width: 0;
+  }
+
+  75% {
+    max-width: 0;
+  }
+
+  90% {
+    max-width: 500px;
+  }
+
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes letters-animation {
+  0% {
+    max-width: 0;
+  }
+
+  25% {
+    max-width: 0;
+  }
+
+  50% {
+    max-width: 500px;
+  }
+
+  75% {
+    max-width: 0;
+  }
+
+  100% {
+    max-width: 0;
+  }
+}

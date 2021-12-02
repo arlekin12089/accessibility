@@ -1,0 +1,25 @@
+.code-tips {
+  &__cover {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2em;
+    @include breakpoint(medium-tablet-max) {
+      width: 50%;
+      text-align: center;
+      padding-right: 2em;
+    }
+  }
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(medium-tablet-max) {
+      flex-direction: row;
+    }
+  }
+  .list-tips {
+    width: 100%;
+    @include breakpoint(medium-tablet-max) {
+      width: 50%;
+    }
+  }
+}

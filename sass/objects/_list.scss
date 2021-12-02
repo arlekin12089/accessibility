@@ -1,0 +1,15 @@
+.list-tips {
+  li {
+    margin-bottom: 1em;
+  }
+  i {
+    @include font-size(34);
+    padding-right: 10px;
+    color: $color-blue;
+  }
+  p {
+    @include font-size(18);
+    display: flex;
+    align-items: center;
+  }
+}

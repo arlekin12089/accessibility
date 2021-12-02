@@ -1,0 +1,9 @@
+.link {
+  @include font-size(18);
+  color: $color-blue;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

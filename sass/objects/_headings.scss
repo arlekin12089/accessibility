@@ -1,0 +1,26 @@
+h1 {
+  @include font-size(30);
+  line-height: 40px;
+  color: $color-white;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  font-family: $font-secondary;
+  position: relative;
+  @include breakpoint(medium-tablet-max) {
+    @include font-size(70);
+    line-height: 81px;
+  }
+}
+
+h2 {
+  @include font-size(22);
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-family: $font-secondary;
+
+  @include breakpoint(medium-tablet-max) {
+    @include font-size(35);
+    line-height: 41px;
+  }
+}

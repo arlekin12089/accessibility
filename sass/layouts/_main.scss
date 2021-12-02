@@ -1,0 +1,35 @@
+.main {
+  padding: 3em 1.2em 0;
+
+  @include breakpoint(medium-tablet-max) {
+    padding: 4.5em 1.2em 0;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    flex-direction: column;
+    @include breakpoint(medium-tablet-max) {
+      flex-direction: row;
+    }
+
+    li {
+      flex-basis: 20%;
+      text-align: center;
+      padding: 10px;
+      span {
+        @include font-size(24);
+        font-weight: 500;
+        text-transform: capitalize;
+        font-family: $font-primary;
+        display: inline-flex;
+        margin-bottom: 10px;
+      }
+      div {
+        padding: 10px;
+        background: rgba($color-light-black, 0.3);
+      }
+    }
+  }
+}

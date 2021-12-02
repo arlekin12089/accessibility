@@ -1,0 +1,14 @@
+.section {
+  padding: 0 0 2rem;
+  @include breakpoint(medium-tablet-max) {
+    padding: 0 0 4.5rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    color: $color-blue;
+    @include breakpoint(medium-tablet-max) {
+      margin-bottom: 3.5rem;
+    }
+  }
+}
